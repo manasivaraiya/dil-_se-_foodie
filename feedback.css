@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url("img/dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*navigation bar*/
+
+.navbar {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul {
+    padding: 10px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.navbar li {
+    display: inline;
+    padding: 110px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar li a {
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar li a:hover {
+    background-color: black;
+    color: orangered;
+}
+
+
+/*feedback form*/
+
+.feedback-form {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+}
+
+.feedback-form h1 {
+    padding: 20px 100px 10px;
+    font-size: 60px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.feedback-form p {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+label {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #ddd;
+}
+
+input,textarea{
+    background-color: #ddd;
+}
+
+input,textarea: ::placeholder{
+    color: #111111;
+}
+
+.info {
+    width: 300px;
+}
+
+.message {
+    width: 500px;
+    height: 100px;
+    padding-top: -10px;
+}
+
+button {
+    background-color: #111;
+    color: #ddd;
+    width: 700px;
+    height: 50px;
+    font-weight: bolder;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 1s;
+}
+button:hover{
+    background-color: orangered;
+    color: black;
+}
+
+/*social media*/
+.social_media{
+    background-color: black;
+    height: 80px;
+    margin: 20px 0 0;
+}
+
+.social_media ul{
+    display: flex;
+    position: absolute;
+    padding-left: 470px;
+}
+
+.social_media ul li{
+    list-style: none;
+    width: 100px;
+}
+
+.social_media ul li a{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: block;
+    line-height: 60px;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.social_media ul li a:hover{
+    color: orangered;
+    text-shadow: 0 0 2px orangered;
+    transform: scale(1.1);
+}
+
+/*footer*/
+footer{
+    background-color: orangered;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+}
+

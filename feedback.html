@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>feedback form</title>
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <!--css styling-->
+        <link rel="stylesheet" href="feedback.css">
+        <!--bootstrap styling-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--javascipt styling-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            alert("THANKS FOR THE FEEDBACK");
+          });
+        });
+        </script>
+    </head>
+        <body>
+            <!---navigation bar-->
+            <div class="navbar">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                </ul>
+            </div>
+            <!--feedback form-->
+            <div class="feedback-form">
+                <h1>feedback</h1>
+                <p>please write your feedback below</p><br>
+                <form> 
+                    <label>how would you rate your overall experience?</label><br>
+                    <input type="radio" name="experience">
+                    <label>good</label>
+                    <input type="radio" name="experience">
+                    <label>average</label>
+                    <input type="radio" name="experience">
+                    <label>bad</label><br>
+                    <label>Full name</label>
+                    <input class="info" type="text" placeholder="sarvika tiwari" required>
+                    <label>email</label>
+                    <input class="info" type="text" placeholder="sarvikatiwari@gmail.com" required><br>
+                    <label>age</label>
+                    <input class="info" type="number" placeholder="your age" required>
+                    <label>phone number</label>
+                    <input class="info" type="number" placeholder="9872576509" required><br>
+                    <label>message</label>
+                    <textarea class="message" placeholder="say something!"></textarea><br>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+             <!--social media-->
+             <div class="social_media">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </div>
+         <!--copyright-->
+            <footer>
+                <p>Copyright 2020 &#169;</p>
+            </footer>
+        </body>
+</html>

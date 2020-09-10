@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add recipes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(240, 128, 128, 0.5);
+            }
+            p{
+                text-transform: uppercase;
+                font-size: 40px;
+                font-weight: bolder;
+                padding: 20px 150px;
+                text-align: center;
+            }
+            .open-button{
+                background-color: black;
+                opacity: 0.6;
+                position: fixed;
+                bottom: 40px;
+                left: 90px;
+                color: blanchedalmond;
+                padding: 10px 45px;
+                width: 1150px;
+                cursor: pointer;
+                font-size: 30px;
+                text-transform: capitalize;
+            }
+            .chat-popup{
+                display: none;
+                position: fixed;
+                bottom: 0;
+            }
+            .container{
+                border: 2px solid rgb(68, 194, 211);
+                width: 85%;
+                padding: 10px;
+                text-transform: capitalize;
+                background-color: white;
+                position: fixed;
+                bottom: 25px;
+                left: 80px;
+                text-align: center;
+            }
+            .container label{
+                font-size: 20px;
+            }
+            .container textarea{
+                margin-top: 10px;
+                min-height: 200px;
+                background-color: #f1f1f1;
+                color: black;
+                width: inherit;
+            }
+            .container textarea:focus{
+                background-color: #ddd;
+                outline: none;
+            }
+            .container button{
+                width: inherit;
+                background-color: rgb(42, 207, 42);
+                opacity: 0.8;
+                padding: 15px 45px;
+                width: 400px;
+                cursor: pointer;
+                font-size: 20px;
+                color: white;
+                margin-top: 15px;
+                font-weight: bolder;
+            }
+            .container .close{
+                background-color: rgb(231, 42, 42);
+            }
+            .container button:hover, .open-button{
+                opacity: 1;
+            }
+        </style>
+        <script>
+            function openForm(){
+                document.getElementById("Form").style.display = "block"
+            }
+            function closeForm(){
+                document.getElementById("Form").style.display = "none"
+            }
+        </script>
+    </head>
+        <body>
+            <p>add your recipes here</p>
+            <button class="open-button" onclick="openForm()">add</button>
+            <div class="chat-popup" id="Form">
+                <form class="container">
+                    <h1>add here</h1>
+                    <label for="msg">Message</label><br>
+                    <textarea placeholder="Type Here..." required></textarea><br>
+                    <button type="submit" class="button">Send</button><br>
+                    <button type="button" class="button close" onclick="closeForm()">Close</button><br>
+                </form>
+            </div>
+        </body>
+</html>

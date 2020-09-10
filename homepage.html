@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Homepage</title>
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <!--css styling-->
+        <link rel="stylesheet" href="homepage.css">
+        <!--bootstrap styling-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--javascipt styling-->
+        <script type="text/javascript">
+         function countDown(){
+            // event's day date and time
+            var countdownDate = new Date("June 30, 2021 12:12:12").getTime()
+
+            // today's date and time
+            var currentDate = new Date().getTime()
+
+            // distance between event's day and today
+            var distance = countdownDate - currentDate 
+
+            // time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) /(1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) /(1000));
+
+            // display in two-digit format
+            days = (days < 10) ? "0" + days : days;
+            hours = (hours < 10) ? "0" + hours : hours;
+            minutes = (minutes < 10) ? "0" + minutes : minutes;
+            seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+            // display the result in the element with id="countdown"
+            document.getElementById("days").innerHTML = days; 
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+            
+            // If the count down is over, write some text 
+            if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+         }
+         var x = setInterval(countDown,1000);
+        </script>
+    </head>
+        <body>
+         <!---navigation bar-->
+            <div class="navbar">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                </ul>
+            </div>
+         <!---title block-->
+            <div class="name">
+             <!---text in title block-->
+                <div class="text">
+                    <h1><b>DIL SE FOODIE &#127839 😋</b> </h1>
+                    <p>Eat healthy Stay fit</p>
+                </div>
+             <!---button in title block-->
+                <div class="button">
+                    <a href="#">Read Recipes</a>
+                </div>
+            </div>
+             <!--recipe section-->
+             <div class="recipe__section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="image__wrapper">
+                                <img src="img/pancakes.jpg">
+                                <div class="image__wrapper-text">
+                                    <h5><a href="breakfast.html">Breakfast</a></h5>
+                                    <p>quick and easy vegetarian breakfast ideas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="image__wrapper">
+                                <img src="img/burrito.jpg">
+                                <div class="image__wrapper-text">
+                                    <h5><a href="lunch.html">Lunch</a></h5>
+                                    <p>quick and easy vegetarian lunch box ideas</p>
+                                </div>
+                            </div>
+                        </div>                      
+                        <div class="col-sm-4">
+                            <div class="image__wrapper">
+                                <img src="img/pizza.jpg">
+                                <div class="image__wrapper-text">
+                                    <h5><a href="dinner.html">Dinner</a></h5>
+                                    <p>quick and easy vegetarian dinner ideas</p>
+                                </div>
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+            </div>
+         <!---login block-->
+        <div class="login">
+            <marquee>
+                <a href="loginform.html" target="blank">CLick Here to login</a>
+            </marquee>
+        </div>
+        <!--add recipe-->
+        <div class="add-recipes">
+            <div class="container">
+                <div class="row">
+                   <div class="col-sm-8">
+                       <p><b>create an account and share your vegetarian recipes here!</b></p>
+                   </div>
+                   <div class="col-sm-4">
+                       <button type="button"><a href="addrecipes.html">add recipes</a></button>
+                   </div>
+                </div>
+            </div>
+        </div>
+         <!--coupon section-->
+         <div class="coupon">
+            <img src="img/alarm_clock.jpg">
+            <table id="countdown">
+                <tr class="info">
+                    <td colspan="4">SPECIAL OFFER</td>
+                </tr>
+                <tr class="info">
+                    <td id="days"></td>
+                    <td id="hours"></td>
+                    <td id="minutes"></td>
+                    <td id="seconds"></td>
+                </tr>
+                <tr>
+                    <td>DAYS</td>
+                    <td>HOURS</td>
+                    <td>MINUTES</td>
+                    <td>SECONDS</td>
+                </tr>
+            </table>
+            <p><b>AVAIL OUR RECIPE BOOK FOR FREE. LIMITED PERIOD  OFFER.</b></p>
+        </div>
+       </div>
+         <!--hot favourites-->
+         <div class="favourite">
+             <div class="container-fluid"><h3 class="category"><b>hot favourites</b></h3>
+                 <div class="row">
+                     <div class="col-sm-6">
+                         <div class="row no-gutters">
+                             <div class="col-sm-3">
+                                <div class="image__wraper">
+                                    <img src=img/top5pizza.jpg>
+                                </div>
+                             </div>
+                             <div class="col-sm-9">
+                                 <p><a href="top_pizza.html" target="_blank">Best pizza places</a></p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="row no-gutters">
+                            <div class="col-sm-3">
+                               <div class="image__wraper">
+                                   <img src=img/mocktail.jpg>
+                               </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <p><a href="cocktail.html" target="blank">beat the heat with best cocktails</a></p>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-sm-6">
+                        <div class="row no-gutters">
+                            <div class="col-sm-3">
+                               <div class="image__wraper">
+                                   <img src=img/diy.jpg>
+                               </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <p><a href="5min.html" target="blank">5 min DIY recipes</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                       <div class="row no-gutters">
+                           <div class="col-sm-3">
+                              <div class="image__wraper">
+                                  <img src=img/streetfood.jpg>
+                              </div>
+                           </div>
+                           <div class="col-sm-9">
+                               <p><a href="street-food.html" target="blank">best street corners</a></p>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+         <!--category section-->   
+            <div class="category">
+                <div class="container"><h3 class="category"><b>categories</b></h3>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="image__wrapper">
+                                <img src="img/salad.jpg">
+                                <div class="image-text">
+                                    <h5><a href="salads.html">Salads</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="image__wrapper">
+                                <img src="img/french_fries.jpg">
+                                <div class="image-text">
+                                    <h5><a href="snacks.html">Snacks</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="image__wrapper">
+                                <img src="img/soup.jpg">
+                                <div class="image-text">
+                                    <h5><a href="soup.html">soups</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="image__wrapper">
+                                <img src="img/pasta.jpg">
+                                <div class="image-text">
+                                    <h5><a href="maincourse.html">Main-course</a></h5>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-sm-2">
+                            <div class="image__wrapper">
+                                <img src="img/champegne.jpg">
+                                <div class="image-text">
+                                    <h5><a href="drinks.html">Drinks</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="image__wrapper">
+                                <img src="img/donuts.jpg">
+                                <div class="image-text">
+                                    <h5><a href="desserts.html">Desserts</a></h5>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+         <!--social media-->
+            <div class="social_media">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </div>
+         <!--copyright-->
+            <footer>
+                <p>Copyright 2020 &#169;</p>
+            </footer>
+        </body>
+</html>

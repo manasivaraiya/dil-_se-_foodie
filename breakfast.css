@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 26px;
+    color: orangered;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(15, 13, 13, 0.89);
+    background-size: cover;
+    background-image: url("img/dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*navigation bar*/
+
+.navbar {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul {
+    padding: 10px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.navbar li {
+    display: inline;
+    padding: 110px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar li a {
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar li a:hover {
+    background-color: black;
+    color: orangered;
+}
+
+
+/*main block*/
+
+h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    background-color: orangered;
+    margin: 10px 500px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.block-1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+    padding: 25px;
+    padding-bottom: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    background-image: url("img/bg.jpg");
+}
+
+.block-2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+    padding: 25px;
+    padding-bottom: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    background-image: url("img/bg2.jpg");
+    background-size: cover;
+}
+
+.row {
+    margin: 50px;
+}
+
+.container-fluid pre {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #ddd;
+    background-color: rgb(24, 22, 22);
+    border-radius: 5px;
+    font-size: 45px;
+    margin-right: 40px;
+    margin-left: 45px;
+}
+
+img {
+    margin: 30px 20px;
+    border-radius: 55px;
+    width: 90%;
+}

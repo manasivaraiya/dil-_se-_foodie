@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    color: orangered;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("img/dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*navigation bar*/
+
+.navbar {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul {
+    padding: 10px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.navbar li {
+    display: inline;
+    padding: 110px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar li a {
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar li a:hover {
+    background-color: black;
+    color: orangered;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: rgb(240, 208, 196);
+}
+
+img {
+    margin-left: 40px;
+    height: 350px;
+    width: 450px;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(245, 242, 240);
+    margin: 30px 70px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 25px;
+    color: gray;
+}
+
+pre {
+    color: rgb(240, 176, 176);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+#ingredients {
+    float: right;
+    box-sizing: border-box;
+    background-color: rgb(245, 206, 191);
+    color: rgb(17, 17, 17);
+    margin-right: 30px;
+    height: 350px;
+    width: 800px;
+}
+
+#recipe{
+    box-sizing: border-box;
+    background-color: #ddd;
+    color: #111;
+    margin: 40px;
+}
+@media(max-width:100px) {
+    #ingredients {
+        width: 100%;
+        float: none;
+    }
+}
+
+#recipe {
+    width: 95%;
+    float: none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

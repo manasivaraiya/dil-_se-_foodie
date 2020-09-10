@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*navigation bar*/
+.navbar {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul {
+    padding: 10px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.navbar li {
+    display: inline;
+    padding: 110px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar li a {
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar li a:hover {
+    background-color: black;
+    color: orangered;
+}
+
+/*title block*/
+.name {
+    background-image: url("img/coverpic.jpg");
+    background-size: cover;
+    margin: 0px;
+    text-align: center;
+}
+
+/*title block text*/
+.text {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    padding-left: 300px;
+    padding-bottom: 50px;
+}
+
+.text h1 {
+    margin: 0;
+    padding-top: 150px;
+    text-shadow: none;
+    font-size: 70px;
+}
+
+.text p {
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+/*title block button*/
+.button {
+    padding-bottom: 100px;
+    font-size: 30px;
+}
+
+.button a {
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    
+}
+
+.button a:hover {
+    background-color: black;
+    color: orangered;
+    text-decoration: none;
+}
+
+/* coupon */
+.coupon{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(0, 0, 0, 0.9);
+    height: 300px;
+    margin: 50px 100px;
+    padding: 10px 40px;
+    border: 5px dashed white;
+}
+
+.coupon > img{
+    width: 300px;
+    height: 270px;
+    float: right;
+    margin-right: 100px;
+}
+
+#countdown{
+    margin-left: 100px;
+    position: relative;
+    text-align: center;
+    color:white;
+}
+
+.info{
+    font-size: 60px;
+}
+.coupon > p{
+    margin-left: 90px;
+    font-size: 15px ;
+    padding-top: 40px;
+    color: orangered;
+}
+
+/*login section*/
+.login {
+    margin-top: 10px;
+    background-color: black;
+    padding: 50px 50px;
+    font-weight: bold;
+}
+
+.login marquee {
+    direction: ltr;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: orangered;
+}
+
+.login a {
+    color: orangered;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: none;
+    color:white;
+}
+
+/* recipe section */
+.recipe__section{
+    padding: 50px 0;
+}
+
+.image__wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.image__wrapper img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.4s;
+}
+
+.image__wrapper:hover img{
+    transform: scale(1.3,1.3);
+    cursor: pointer;
+}
+
+.image__wrapper-text{
+    max-height: 150px;
+    padding: 30px 10px 15px;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    width:100%;
+}
+
+.image__wrapper-text h5 a{
+    font-size: 25px;
+    color: orangered;
+    text-decoration: none;
+}
+
+/*hot favourite*/
+.favourite{
+    margin-bottom: 20px;
+}
+.col-sm-6{
+    padding: 5px;
+}
+.col-sm-3{
+    border: 1px solid black;
+}
+.col-sm-9{
+    background-color: rgb(0, 0, 0, 0.9);
+    color: orangered;
+    text-transform: uppercase;
+    padding-top: 40px ;
+}
+.col-sm-9 p{
+    margin: 20px;
+    font-size: 30px;
+}
+
+.col-sm-9 a{
+    color: orangered;
+}
+.col-sm-9 a:hover{
+    text-decoration: none;
+    color: orangered;
+}
+.image__wraper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image__wraper img{
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+}
+
+/*add recipe*/
+.add-recipes{
+    background-color: orangered;
+    width: 90%;
+    height: 150px;
+    margin: 10px 50px;
+    border: 5px solid black;
+}
+
+.add-recipes p{
+    font-size: 30px;
+    color: black;
+    padding: 30px 0;
+    text-transform: uppercase;
+}
+
+.add-recipes button{
+    width: 300px;
+    padding: 10px 30px;
+    margin: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+.add-recipes button a{
+    text-decoration: none;
+    color: orangered;
+}
+
+.add-recipes button:hover,.add-recipes button a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+/*category section*/
+.image-text{
+    max-height: 50px;
+    padding: 10px 3px 5px;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    width:100%;
+}
+
+.image-text h5 a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.category{
+    color: grey;
+    text-align: center;
+    padding: 10px 0 5px;
+    text-transform: uppercase;
+}
+
+/*social media*/
+.social_media{
+    background-color: black;
+    height: 80px;
+    margin: 20px 0 0;
+}
+
+.social_media ul{
+    display: flex;
+    position: absolute;
+    padding-left: 470px;
+}
+
+.social_media ul li{
+    list-style: none;
+    width: 100px;
+}
+
+.social_media ul li a{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: block;
+    line-height: 60px;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.social_media ul li a:hover{
+    color: orangered;
+    text-shadow: 0 0 2px orangered;
+    transform: scale(1.1);
+}
+
+/*footer*/
+footer{
+    background-color: orangered;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+}

@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("img/dark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.diy_recipes{
+    margin: 30px;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(240, 208, 196);
+}
+
+.row{
+    margin: 30px;
+}
+.image__wraper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image__wraper img{
+    width: 70%;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 100%;
+    float: right;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+.col-sm-8{
+    width: 70%;
+    background-color: #ddd;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+h3,p{
+    margin: 30px;
+    text-transform: capitalize;
+}
